@@ -12,6 +12,8 @@ let transporter2= {
 const smtpTransport2 = nodemailer.createTransport(transporter2)
 
 route.post('/sendmail_amethyst',(req,res)=>{
+console.log('in amethy');
+
     const mailOptions2 = {
                 from:'amethyst3724@gmail.com',
                to:req.body.email,

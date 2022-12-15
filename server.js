@@ -19,7 +19,7 @@ const smtpTransport1 = nodemailer.createTransport(transporter1)
 
 
 app.post('/sendmail_candy',(req,res)=>{
-
+console.log('in candy');
  const mailOptions1 = {
              from:'candy.chatbot@gmail.com',
             to:req.body.email,
